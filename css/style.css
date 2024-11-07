@@ -1,0 +1,221 @@
+/* styles.css */
+
+body {
+     font-family: Arial, sans-serif;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     margin: 0;
+     background: #f5f5f5;
+   }
+   
+   /* Modal Background */
+   .modal {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100vw;
+     height: 100vh;
+     background: rgba(0, 0, 0, 0.5);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+   
+   .modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 16px;
+    width: 378px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    height: 500px;
+   }
+   
+   .card-container {
+     display: flex;
+     gap: 10px;
+     margin-bottom: 20px;
+   }
+   
+   .card {
+     border-radius: 16px;
+     padding: 20px;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+     position: relative;
+     width: 120px;
+   }
+   
+   .today-earnings {
+     background: linear-gradient(135deg, #4f44ff, #8c4cff);
+     color: #fff;
+   }
+   
+   .total-earnings {
+     background: #fff;
+     color: #333;
+   }
+   
+   .card-title {
+     font-size: 0.9rem;
+     margin: 0;
+     opacity: 0.8;
+   }
+   
+   .amount {
+     font-size: 1.5rem;
+     font-weight: bold;
+     margin: 10px 0;
+   }
+   
+   .percentage {
+     font-size: 0.8rem;
+     opacity: 0.8;
+   }
+   
+   .percentage span {
+     color: #4CAF50;
+     font-weight: bold;
+   }
+   
+   #earningsChart {
+     width: 100%;
+     height: 50px;
+     margin-left: 38px;
+   }
+   
+   /* Modal Text */
+   h2 {
+     margin: 0;
+     font-size: 1.2rem;
+   }
+   
+   p {
+     font-size: 0.9rem;
+     color: #666;
+     margin: 10px 0 20px;
+   }
+   .card.total-earnings {
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    /* top: 0; */
+}
+
+.card.today-earnings:first-child {
+    /* transform: rotate(90deg); */
+    position: absolute;
+    z-index: 1;
+    width: 203px;
+    height: 95px;
+    left: 11px;
+    top: 78px;
+}
+.modal {
+    margin: 80px 0;
+    position: absolute;
+}
+
+.card-container {
+    position: relative;
+    z-index: 1;
+    margin-top: 70px;
+}
+.card.today-earnings p {
+    color: #fff;
+}
+.card.today-earnings p.percentage span {
+    color: #fff;
+    background: #0b2334;
+    padding: 4px;
+    border-radius: 5px;
+}
+.modal-slide-area {
+    margin-bottom: 22px;
+    margin-top: 42px;
+}
+.card.today-earnings {
+  width: 236px;
+  position: relative;
+  z-index: 1;
+  margin-top: 77px;
+  height: 94px;
+}
+
+.cross-btn {
+  position: absolute;
+  top: -67px;
+  right: 0;
+}
+
+.cross-btn i {
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.2);
+  line-height: 40px;
+  border-radius: 50px;
+  font-size: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+   /* Pagination Dots */
+   .pagination-dots {
+     display: flex;
+     justify-content: center;
+     margin-bottom: 20px;
+   }
+   
+   .dot {
+     height: 8px;
+     width: 8px;
+     margin: 0 5px;
+     background-color: #bbb;
+     border-radius: 50%;
+     display: inline-block;
+   }
+   
+   .dot.active {
+     background-color: #4f44ff;
+   }
+   
+   /* Buttons */
+   .modal-buttons {
+     display: flex;
+     gap: 10px;
+     justify-content: center;
+   }
+   
+   .btn {
+     padding: 10px 20px;
+     font-size: 0.9rem;
+     border: none;
+     border-radius: 8px;
+     cursor: pointer;
+   }
+   
+   .back {
+     background-color: #fff;
+     color: #4f44ff;
+     border: 1px solid #ccc;
+   }
+   
+   .continue {
+     background-color: #4f44ff;
+     color: #fff;
+   }
+   
+
+   /* owl-carousel */
+   .modal-slide-area.slide-carousel .owl-dots button {
+    width: 10px;
+    height: 10px;
+    background: #ddd;
+    display: inline-block;
+    margin: 0 5px;
+    border-radius: 50px;
+    opacity: .6;
+}
+.modal-slide-area.slide-carousel .owl-dots button.active {
+    background: #4B5BF1;
+}

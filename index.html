@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Onboarding Modal</title>
+  <link rel="stylesheet" href="css/owl.carousel-v2.3.4.min.css">
+  <link rel="stylesheet" href="css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <div class="modal">
+    <div class="modal-content">
+      <!-- Earnings Cards Section -->
+      <div class="card-container">
+        <div class="cross-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <!-- Today's Earnings Card -->
+        <div class="card today-earnings">
+          <p class="card-title">Earnings today</p>
+          <p class="amount">$1,421.56</p>
+          <p class="percentage"><span>+1.5%</span> Higher earnings than usual</p>
+        </div>
+
+        <!-- Total Earnings Card -->
+        <div class="card total-earnings">
+          <p class="card-title">Total earnings</p>
+          <p class="amount">$812,168.21</p>
+          <canvas id="earningsChart" width="120" height="120" style="width: 120px; height: 120px;"></canvas>
+        </div>
+      </div>
+
+      <!-- Modal Text Content -->
+      <div class="modal-slide-area slide-carousel owl-carousel">
+          <div class="single-slide-item">
+               <h2>Get started</h2>
+               <p>Get started right away and track your revenue. On a clear dashboard you can easily monitor all your progress live and watch your success grow.</p>
+          </div>
+          <div class="single-slide-item">
+               <h2>Get started</h2>
+               <p>Get started right away and track your revenue. On a clear dashboard you can easily monitor all your progress live and watch your success grow.</p>
+          </div>
+          <div class="single-slide-item">
+               <h2>Get started</h2>
+               <p>Get started right away and track your revenue. On a clear dashboard you can easily monitor all your progress live and watch your success grow.</p>
+          </div>
+      </div>
+      <!-- <h2>Get started</h2>
+      <p>Get started right away and track your revenue. On a clear dashboard you can easily monitor all your progress live and watch your success grow.</p>
+      
+      
+      <div class="pagination-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div> -->
+
+      <!-- Navigation Buttons -->
+      <div class="modal-buttons">
+        <button class="btn back">Back</button>
+        <button class="btn continue">Continue</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/jquery-3.7.1.js"></script>
+  <script src="./js/owl.carousel-2.3.4.min.js"></script>
+  <script src="./js/chart-v4.4.6.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>
