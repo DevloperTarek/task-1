@@ -6,6 +6,10 @@
   <title>Onboarding Modal</title>
   <link rel="stylesheet" href="css/owl.carousel-v2.3.4.min.css">
   <link rel="stylesheet" href="css/fontawesome-all.min.css">
+  <!-- lato fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -19,16 +23,19 @@
         </div>
         <!-- Today's Earnings Card -->
         <div class="card today-earnings">
-          <p class="card-title">Earnings today</p>
-          <p class="amount">$1,421.56</p>
+          <div class="flex-area flex justify-between">
+            <p class="card-title">Earnings today</p>
+            <p><i class="fas fa-envelope-open"></i></p>
+          </div>
+          <p class="amount"><span>$</span>1,421.56</p>
           <p class="percentage"><span>+1.5%</span> Higher earnings than usual</p>
         </div>
 
         <!-- Total Earnings Card -->
         <div class="card total-earnings">
           <p class="card-title">Total earnings</p>
-          <p class="amount">$812,168.21</p>
-          <canvas id="earningsChart" width="120" height="120" style="width: 120px; height: 120px;"></canvas>
+          <p class="amount"><span>$</span>812,168.21</p>
+          <canvas id="earningsChart" width="220" height="120" style="width: 220px; height: 120px;"></canvas>
         </div>
       </div>
 
